@@ -62,6 +62,8 @@ function mainfun(min,max,avg,arr){
     }
 
     mainfun(Seattle.minHourlyCustomers,Seattle.maxHourlyCustomers,Seattle.averageCookiesPerCustomer,Seattle.numoFcooiesPerHour);
+
+var divsix=document.getElementById("divsix");
     var divfour = document.getElementById("divfour");
     var divfive = document.getElementById("divfive");
     var divThree = document.getElementById("divthree");
@@ -186,9 +188,78 @@ fourTr.appendChild(thfour);
 
 }}
 
+var Paris =new Location(38,20,2.3);
+mainfun(Paris.minHourlyCustomers,Paris.maxHourlyCustomers,Paris.averageCookiesPerCustomer,Paris.numoFcooiesPerHour);
+var myTablefive= document.createElement("table");
+    divfive.appendChild(myTablefive);
+var fiveTr=document.createElement("tr");
+myTablefive.appendChild(fiveTr);
+      
+for(let index=0; index<=times.length; index ++){
+    if(index==0){
+
+        var thfive=document.createElement("th");
+        thfive.textContent="Paris"
+        fiveTr.appendChild(thfive);
+                        
+    }
+    else if(index==times.length){ 
+        var sum =Paris.numoFcooiesPerHour.reduce(function (a, b) {
+return a + b;
+}, 0);
+
+var thfive=document.createElement("th");
+thfive.textContent=sum;
+fiveTr.appendChild(thfive);
+}
+else {
+
+var thfive=document.createElement("th");
+thfive.textContent=Paris.numoFcooiesPerHour[index];
+fiveTr.appendChild(thfive);
+
+}}
 
 
-      /*  var LocationName=["Seattle","Tokyo","Dubai","Paris","Lima","Totals"];
+
+var Lima =new Location(16,2,4.6);
+mainfun(Lima.minHourlyCustomers,Lima.maxHourlyCustomers,Lima.averageCookiesPerCustomer,Lima.numoFcooiesPerHour);
+var myTablesix= document.createElement("table");
+    divsix.appendChild(myTablesix);
+var sixTr=document.createElement("tr");
+myTablesix.appendChild(sixTr);
+      
+for(let index=0; index<=times.length; index ++){
+    if(index==0){
+
+        var thsix=document.createElement("th");
+        thsix.textContent="Lima"
+        sixTr.appendChild(thsix);
+                        
+    }
+    else if(index==times.length){ 
+        var sum =Lima.numoFcooiesPerHour.reduce(function (a, b) {
+return a + b;
+}, 0);
+
+var thsix=document.createElement("th");
+thsix.textContent=sum;
+sixTr.appendChild(thsix);
+}
+else {
+
+var thsix=document.createElement("th");
+thsix.textContent=Lima.numoFcooiesPerHour[index];
+sixTr.appendChild(thsix);
+
+}}
+
+
+
+
+
+
+/*  var LocationName=["Seattle","Tokyo","Dubai","Paris","Lima","Totals"];
     
 
     for (let index = 0; index < LocationName.length; index++) {
@@ -381,7 +452,7 @@ var Dubai= {
 }
 
 Dubai.clcnumofcooie();
-var Paris = {
+var Paris(38,20,2.3) = {
     maxHourlyCustomers: 38,
     minHourlyCustomers: 20,
     averageCookiesPerCustomer: 2.3,
@@ -418,7 +489,7 @@ var Paris = {
     }
 }
 Paris.clcnumofcooie();
-var Lima = {
+var Lima(16,2,4.6) = {
     maxHourlyCustomers: 16,
     minHourlyCustomers: 2,
     averageCookiesPerCustomer: 4.6,
