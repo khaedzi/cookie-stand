@@ -94,10 +94,6 @@ Location.prototype.CreateTabl = function () {
         }
     }
 }
-
-
-
-
 var Lima = new Location("Lima ", 16, 2, 4.6);
 var Paris = new Location("Paris", 38, 20, 2.3);
 var Seattle = new Location("Seattle", 65, 23, 6.3);
@@ -131,8 +127,6 @@ for (let index = 0; index < times.length; index++) {
 
 
     }
-
-
     else if (index == times.length - 1) {
         for (let index = 0; index < 1; index++) {
             for (let index = 0; index < sumarr.length; index++) {
