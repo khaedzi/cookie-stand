@@ -1,8 +1,10 @@
 
 body{
+
     background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5NCVoFAUJuz9n6ltirAsKsSqZF5FGgrMGow&usqp=CAU);
 background-repeat: no-repeat;
-background-size: cover;}
+background-size: cover;
+}
 #locationimg{
 width: 20px;
 height: 10px;
@@ -24,17 +26,60 @@ font-size: 30px;
     }
     td{
         border: .5px solid black;
-    
     width: 60px;
     text-align: center;
-    
     }
     th{
-        
-            border: .5px solid black;
-        
+         border: .5px solid black;
         width: 60px;
         text-align: center;
         
-        
-    }
+    
+    }#ulone{
+            background-color:blueviolet;
+            
+            height: 51px;
+            
+            }
+            #ulone li{
+            display: inline;
+            list-style: none;
+            margin-right: 0px;
+            text-align: center;
+            margin-top: 20px;
+            
+            }
+            #ulone li a{
+                display: inline;
+                list-style: none;
+                margin-right: 20px;
+                text-align: center;
+                margin-top: 20px;
+            width: 100%;
+            height: 100%;    
+                }
+                #litwo a{
+               
+                background-color:white;
+            }
+            a:hover{
+            
+            background-color:cornsilk;
+            transition: 1s;
+            
+            }
+            
+
+
+
+            a{
+                font-size: larger;
+                text-decoration: none;
+                cursor: pointer;
+                margin-left:80px ;
+                margin-top: 5px;
+                color: black;
+                font-weight: bolder;
+                text-align: center;
+            
+            }

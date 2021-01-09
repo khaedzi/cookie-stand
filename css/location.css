@@ -1,24 +1,3 @@
-body{
-
-    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5NCVoFAUJuz9n6ltirAsKsSqZF5FGgrMGow&usqp=CAU);
-background-repeat: no-repeat;
-background-size: cover;
-}
-#locationimg,#img2{
-    width: 35px;
-    height: 25px;
-}
-
-
-#h1one{
-    text-align: center;
-    font-size: 30px;
-    
-    }
-#img1{
-
-    margin-left:100px ;
-}
 a{
     font-size: larger;
     text-decoration: none;
@@ -56,11 +35,11 @@ margin-top: 20px;
     margin-top: 20px;
    
     }
-#lione a{
+#lifive a{
     
     background-color:white;
 }
-a :hover{
+  a:hover{
             
     background-color:cornsilk;
     transition: 1s;
@@ -75,5 +54,12 @@ a{
     color: black;
     font-weight: bolder;
     text-align: center;
+
+}
+#firstimg{
+width: 700px;
+display: block;
+margin: auto;
+height: 300px;
 
 }
